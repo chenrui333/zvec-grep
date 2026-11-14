@@ -620,8 +620,8 @@ bash scripts/check.sh
 ## Native and CUDA builds
 
 The safe llama API and the C5 FFI boundary share the same pinned
-`zvec-ai/llama-cpp-rs` revision (`b55399ac6c2035f2301120547c4c967e741d25d3`),
-from branch `prebuilt/0.1.154-cpu-r2-glibc-2.31`.
+`zvec-ai/llama-cpp-rs` revision (`aea1b622bd99772e2a9141013e5a9ae46ec95a21`),
+based on branch `prebuilt/0.1.154-cpu-r2-glibc-2.31` with Cargo 1.100 artifact-layout support.
 Its sys crate automatically selects a SHA256-pinned SDK when target, features
 and native options match. Linux x64 CPU, Linux ARM64 CPU and Linux x64 CUDA use
 `zvec-0.1.154-glibc-2.31-r1`, built on Ubuntu 20.04 and verified against a glibc
